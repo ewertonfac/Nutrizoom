@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telaperfil2"
+    tools:context=".PerfilActivity">
+
+    <TextView
+        android:id="@+id/txImc"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="26dp"
+        android:gravity="center_vertical"
+        android:text="IMC:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btImc"
+        app:layout_constraintEnd_toStartOf="@+id/txeImc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txAltura" />
+
+    <EditText
+        android:id="@+id/txeImc"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="480dp"
+        android:background="@color/teal_700"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txImc"
+        app:layout_constraintTop_toBottomOf="@+id/txeAltura" />
+
+    <TextView
+        android:id="@+id/txAltura"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:gravity="center_vertical"
+        android:text="Altura:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txImc"
+        app:layout_constraintEnd_toStartOf="@+id/txeAltura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txPeso" />
+
+    <EditText
+        android:id="@+id/txeAltura"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="156dp"
+        android:background="@color/teal_700"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txeImc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txAltura"
+        app:layout_constraintTop_toBottomOf="@+id/txePeso" />
+
+    <TextView
+        android:id="@+id/txNome"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="155dp"
+        android:gravity="center"
+        android:text="Nome:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txIdade"
+        app:layout_constraintEnd_toStartOf="@+id/txeNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txeNome"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="156dp"
+        android:background="@color/teal_700"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txeIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txNome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txIdade"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:gravity="center"
+        android:text="Idade:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txPeso"
+        app:layout_constraintEnd_toStartOf="@+id/txeIdade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txNome" />
+
+    <EditText
+        android:id="@+id/txeIdade"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="156dp"
+        android:background="@color/teal_700"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txePeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txIdade"
+        app:layout_constraintTop_toBottomOf="@+id/txeNome" />
+
+    <TextView
+        android:id="@+id/txPeso"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="41dp"
+        android:gravity="center_vertical"
+        android:text="Peso:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txAltura"
+        app:layout_constraintEnd_toStartOf="@+id/txePeso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txIdade" />
+
+    <EditText
+        android:id="@+id/txePeso"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="156dp"
+        android:background="@color/teal_700"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txeAltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txPeso"
+        app:layout_constraintTop_toBottomOf="@+id/txeIdade" />
+
+    <Button
+        android:id="@+id/btImc"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="26dp"
+        android:text="IMC"
+        app:layout_constraintBottom_toTopOf="@+id/btSalvarUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txImc" />
+
+    <Button
+        android:id="@+id/btSalvarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="323dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btImc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
